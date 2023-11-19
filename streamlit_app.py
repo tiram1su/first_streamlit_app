@@ -24,7 +24,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.header('Fruityvice Fruit Advice!')
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon" + "kiwi")
 
 #Not quite sure what this part does, something with pandas
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
